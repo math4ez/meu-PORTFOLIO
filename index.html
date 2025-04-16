@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>portfolio Principal</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matheus Brasil - Desenvolvedor Web</title>
+  <meta name="description" content="Portfólio de Matheus Brasil, Desenvolvedor Web especializado em Front-End e Back-End">
+  <meta name="theme-color" content="#111111">
+  
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+ 
+  
+  
+<body class="bg-[#111111] text-white min-h-screen cursor-none">
+  <!-- Canvas para as partículas -->
+  <div id="particles-js" class="fixed top-0 left-0 w-full h-full -z-10"></div>
+  
+  
+  
+  
+ <!-- Loader Futurista -->
+    <div class="loader">
+        <div class="holographic-grid"></div>
+        <div class="energy-core">
+            <div class="core-pulse"></div>
+            <div class="core-glow"></div>
+        </div>
+        <div class="particles-container"></div>
+        <div class="loading-text">
+            <span class="loading-text-char">L</span>
+            <span class="loading-text-char">O</span>
+            <span class="loading-text-char">A</span>
+            <span class="loading-text-char">D</span>
+            <span class="loading-text-char">I</span>
+            <span class="loading-text-char">N</span>
+            <span class="loading-text-char">G</span>
+        </div>
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+    </div>
+  
+  
+
+ <!-- Cursor personalizado -->
+  <div class="custom-cursor"></div>
+  <div class="custom-cursor-follower"></div>
+
+  <div class="container mx-auto px-4 py-8 relative z-10">
+    <!-- Navegação Centralizada -->
+    <nav class="flex flex-col md:flex-row justify-center items-center mb-20 gap-4 md:gap-8">
+      <!-- Logo/Título -->
+      <div class="text-xl font-bold mb-4 md:mb-0 md:absolute md:left-4">
+        <span class="text-white">Matheus Brasil</span>
+        <span class="block text-sm text-gray-400">DEV</span>
+      </div>
+      
+      <!-- Menu Desktop Centralizado -->
+      <div class="hidden md:flex space-x-6">
+        <a href="#home" class="text-[#00ff9d] hover:opacity-80 transition-opacity">HOME</a>
+        <a href="#about" class="hover:text-[#00ff9d] transition-colors">SOBRE</a>
+        <a href="#skills" class="hover:text-[#00ff9d] transition-colors">EXPERIÊNCIA</a>
+        <a href="#technology" class="hover:text-[#00ff9d] transition-colors">TECNOLOGIAS</a>
+        <a href="#portfolio" class="hover:text-[#00ff9d] transition-colors">PROJETOS</a>
+        <a href="#contact" class="hover:text-[#00ff9d] transition-colors">CONTATO</a>
+      </div>
+
+      <!-- Menu Mobile (ícone hamburger) -->
+      <button class="mobile-menu-button md:hidden text-white focus:outline-none" 
+              aria-label="Menu" 
+              aria-expanded="false">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+      
+      <!-- Menu Mobile (conteúdo) -->
+      <div class="mobile-menu hidden absolute top-full left-0 right-0 bg-gray-900 z-50">
+        <div class="p-6 flex flex-col space-y-4 text-center">
+          <a href="#home" class="text-[#00ff9d] hover:opacity-80 transition-opacity">HOME</a>
+          <a href="#about" class="hover:text-[#00ff9d] transition-colors">SOBRE</a>
+          <a href="#skills" class="hover:text-[#00ff9d] transition-colors">EXPERIÊNCIA</a>
+          <a href="#technology" class="hover:text-[#00ff9d] transition-colors">TECNOLOGIAS</a>
+          <a href="#portfolio" class="hover:text-[#00ff9d] transition-colors">PROJETOS</a>
+          <a href="#contact" class="hover:text-[#00ff9d] transition-colors">CONTATO</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Seção Home e Sobre - ATUALIZADA -->
+    <section class="mb-32 fade-in">
+      <div class="flex flex-col md:flex-row gap-8">
+        <!-- Imagem - ordem 1 no mobile, ordem 2 no desktop -->
+        <div class="order-1 md:order-2 flex flex-col items-center w-full md:w-auto">
+          <!-- Foto quadrada com efeito de hover -->
+          <div class="relative mb-6 w-64 h-64 md:w-96 md:h-96 group transition-all duration-300 hover:scale-105">
+            <div class="absolute inset-0 border-4 border-white shadow-2xl shadow-[#00ff9d]/40 overflow-hidden">
+              <img
+                src="https://i.postimg.cc/RF8Rw4Xg/Captura-de-tela-2025-03-30-214203.png"
+                alt="Matheus Brasil - Desenvolvedor Web"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+            </div>
+            <div class="absolute inset-0 border-2 border-[#00ff9d] pointer-events-none"></div>
+          </div>
+          
+          <!-- Ícones de tecnologias centralizados -->
+          <div class="flex flex-wrap justify-center gap-4 w-full max-w-md px-4">
+            <a href="#" class="tech-icon" aria-label="CSS">
+              <img
+                src="https://icongr.am/devicon/css3-original.svg?size=128&color=currentColor"
+                class="w-10 h-10 hover:scale-110 transition-transform"
+                alt="CSS"
+              />
+            </a>
+            
+            <a href="#" class="tech-icon" aria-label="HTML">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"          
+                class="w-10 h-10 hover:scale-110 transition-transform"
+                alt="HTML"
+              />
+            </a>
+            
+            <a href="#" class="tech-icon" aria-label="JavaScript">
+              <img
+                src="https://icongr.am/devicon/javascript-original.svg?size=128&color=currentColor"
+                class="w-10 h-10 hover:scale-110 transition-transform"
+                alt="JavaScript"
+              />
+            </a>
+            
+            <a href="#" class="tech-icon" aria-label="Python">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                class="w-10 h-10 hover:scale-110 transition-transform"
+                alt="Python"
+              />
+            </a>
+            
+            <a href="#" class="tech-icon" aria-label="Angular">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg"
+                class="w-10 h-10 hover:scale-110 transition-transform"
+                alt="Angular"
+              />
+            </a>
+            
+            <a href="#" class="tech-icon" aria-label="TypeScript">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg"
+                class="w-10 h-10 hover:scale-110 transition-transform"
+                alt="TypeScript"
+              />
+            </a>
+            
+            <a href="#" class="tech-icon" aria-label="PHP">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"
+                class="w-10 h-10 hover:scale-110 transition-transform"
+                alt="PHP"
+              />
+            </a>
+            
+            <a href="#" class="tech-icon" aria-label="MySQL">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+                class="w-10 h-10 hover:scale-110 transition-transform"
+                alt="MySQL"
+              />
+            </a>
+          </div>
+        </div>
+        
+        <!-- Texto - ordem 2 no mobile, ordem 1 no desktop -->
+        <div class="order-2 md:order-1 flex-1">
+          <!-- Título e saudação -->
+          <div class="mb-8">
+            <p class="text-xl font-light text-gray-300 mb-2">
+              Olá, eu sou
+            </p>
+            <h1 class="text-5xl font-bold mb-2 text-white">
+              Matheus Brasil <span class="text-[#00ff9d]">:)</span>
+            </h1>
+            <div class="h-12">
+              <span id="typewriter" class="text-3xl font-mono text-[#00ff9d] border-r-2 border-[#00ff9d]"></span>
+            </div>
+          </div>
+          
+          <!-- Botão Saiba mais sobre mim -->
+          <div class="mb-6">
+            <button 
+              id="saibaMaisBtn"
+              aria-expanded="false"
+              aria-controls="sobreContent"
+              class="flex items-center px-4 py-2 bg-transparent border-2 border-[#00ff9d] text-[#00ff9d] font-medium rounded-lg hover:bg-[#00ff9d] hover:text-black transition-all duration-300 group focus:outline-none focus:ring-2 focus:ring-[#00ff9d] focus:ring-opacity-50"
+            >
+              <span class="mr-2">Saiba mais sobre mim</span>
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                class="h-5 w-5 transition-transform duration-300 transform group-aria-expanded:rotate-90" 
+                fill="none" 
+                viewBox="0 0 24 24" 
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </button>
+            
+            <!-- Conteúdo que será mostrado ao clicar no botão -->
+            <div id="sobreContent" class="hidden mt-4">
+              <p class="text-gray-400 text-xl mb-6 text-justify">
+                Sou um estudante de Análise e Desenvolvimento de Sistemas apaixonado por transformar desafios em soluções tecnológicas eficientes. Com uma base sólida em lógica de programação, busco unir precisão técnica e pensamento analítico para criar sistemas <span class="text-[#00ff9d]">funcionais</span> e <span class="text-[#00ff9d]">intuitivos</span>.
+
+                Minha trajetória acadêmica na UNISUAM, desde 2022, tem sido focada no domínio de linguagens <span class="text-[#00ff9d]">Front-End</span> e <span class="text-[#00ff9d]">Back-End</span>, além de <span class="text-[#00ff9d]">bancos de dados relacionais</span>, sempre com atenção aos detalhes que fazem a diferença entre um código bom e um código excelente.
+              </p>
+            </div>
+          </div>
+          
+          <!-- Frase de impacto com quebra de linha -->
+          <p class="text-xl text-gray-400 mb-6 italic">
+            "Desenvolvo soluções tecnológicas inovadoras 
+            que impulsionam<br class="hidden md:inline"/>negócios e melhoram
+            experiências digitais."
+          </p>
+
+          <div class="flex flex-wrap items-center gap-4 mt-1">
+            <!-- LinkedIn -->
+            <a
+              href="https://www.linkedin.com/in/matheus-brasil-8a0528203"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-10 h-10 bg-[#0077B5] rounded-full flex items-center justify-center hover:opacity-80 transition-opacity"
+              aria-label="LinkedIn"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                class="w-6 h-6"
+                alt="LinkedIn"
+              />
+            </a>
+
+            <!-- GitHub -->
+            <a
+              href="https://github.com/math4ez"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center hover:opacity-80 transition-opacity"
+              aria-label="GitHub"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                class="w-6 h-6"
+                alt="GitHub"
+              />
+            </a>
+
+            <!-- Botão para baixar o CV -->
+            <a 
+              href="https://drive.google.com/uc?export=download&id=1iYxsyWbNm_BcMQ6AR-lqg9XxytAAF6o1" 
+              download="Curriculo-Matheus-Brasil.pdf"
+              class="flex items-center px-4 py-2 bg-transparent border-2 border-[#00ff9d] text-[#00ff9d] font-medium rounded-lg hover:bg-[#00ff9d] hover:text-black transition-all duration-300 group focus:outline-none focus:ring-2 focus:ring-[#00ff9d] focus:ring-opacity-50"
+            >
+              <i class="fas fa-download mr-2"></i>
+              Baixar CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scripts -->
+    <script>
+      // Menu Mobile
+      document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        function toggleMenu() {
+          const isOpen = mobileMenu.classList.toggle('hidden');
+          mobileMenuButton.setAttribute('aria-expanded', !isOpen);
+        }
+        
+        mobileMenuButton.addEventListener('click', toggleMenu);
+        
+        // Fechar ao clicar em um item
+        document.querySelectorAll('.mobile-menu a').forEach(item => {
+          item.addEventListener('click', toggleMenu);
+        });
+        
+        // Fechar ao clicar fora
+        document.addEventListener('click', (e) => {
+          if (!mobileMenu.contains(e.target) && !mobileMenuButton.contains(e.target)) {
+            mobileMenu.classList.add('hidden');
+            mobileMenuButton.setAttribute('aria-expanded', 'false');
+          }
+        });
+
+        // Botão Saiba Mais
+        document.getElementById('saibaMaisBtn').addEventListener('click', function() {
+          const content = document.getElementById('sobreContent');
+          content.classList.toggle('hidden');
+          
+          const isExpanded = content.classList.contains('hidden') ? 'false' : 'true';
+          this.setAttribute('aria-expanded', isExpanded);
+        });
+
+        // Efeito typewriter
+        const phrases = ['Desenvolvedor Web', 'Desenvolvedor de Banco de Dados', 'Desenvolvedor iniciante em IA'];
+        const element = document.getElementById('typewriter');
+        let phraseIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        
+        function typeWriter() {
+          const currentPhrase = phrases[phraseIndex];
+          
+          if (isDeleting) {
+            element.textContent = currentPhrase.substring(0, charIndex - 1);
+            charIndex--;
+          } else {
+            element.textContent = currentPhrase.substring(0, charIndex + 1);
+            charIndex++;
+          }
+          
+          let typeSpeed = 100;
+          if (isDeleting) typeSpeed /= 2;
+          
+          if (!isDeleting && charIndex === currentPhrase.length) {
+            typeSpeed = 2000;
+            isDeleting = true;
+          } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            phraseIndex = (phraseIndex + 1) % phrases.length;
+          }
+          
+          setTimeout(typeWriter, typeSpeed);
+        }
+        
+        typeWriter();
+      });
+    </script>
+ 
+    <!-- COMPETÊNCIAS -->
+   
+
+      <div class="min-h-screen flex items-center justify-center grid-bg">
+        <section id="skills" class="w-full max-w-6xl relative">
+          <div class="absolute inset-0 rounded-3xl filter blur-xl"></div>
+          <div class="relative">
+            <h2 class="text-2xl font-bold text-[#00ff9d] mb-4 neon-text">
+              Competências
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div>
+                <h3 class="text-2xl font-bold mb-6 flex items-center">
+                  <span class="text-[#00ff9d] mr-2 neon-text">+</span>
+                  Formação
+                </h3>
+
+                <div class="space-y-6">
+                  <div
+                    class="tech-card p-6 rounded-xl border border-gray-800 hover:border-[#00ff9d] transition-all"
+                  >
+                    <div class="flex items-start justify-between">
+                      <h4 class="font-bold mb-2 text-xl">
+                        Análise e Desenvolvimento de Sistemas
+                      </h4>
+                      <div
+                        class="px-3 py-1 bg-[#00ff9d]/10 rounded-full text-[#00ff9d] text-xs"
+                      >
+                        Em andamento
+                      </div>
+                    </div>
+                    <p class="text-[#00ff9d] text-sm mb-2">Unisuam</p>
+                    <p class="text-gray-400 text-sm text-justify">
+                      Cursando ADS, desenvolvendo habilidades em desenvolvimento de software (web/mobile), arquitetura de sistemas e banco de dados.
+                    </p>
+                  </div>
+
+                  <div
+                    class="tech-card p-6 rounded-xl border border-gray-800 hover:border-[#00ff9d] transition-all"
+                  >
+                    <div class="flex items-start justify-between">
+                      <h4 class="font-bold mb-2 text-lg">Desenvolvimento de banco de dados de SQL</h4>
+                      <div
+                        class="px-3 py-1 bg-[#00ff9d]/10 rounded-full text-[#00ff9d] text-xs"
+                      >
+                      Concluído
+                      </div>
+                    </div>
+                    <p class="text-[#00ff9d] text-sm mb-2"> Udemy</p>
+                    <p class="text-gray-400 text-sm text-justify">
+                      Aprendizado prático sobre modelagem, criação e manipulação de bancos de dados relacionais utilizando SQL. O curso abrange conceitos como normalização, comandos DDL e DML, criação de consultas eficientes, subconsultas, entre outros fundamentos essenciais para o desenvolvimento e administração de bancos de dados."
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold mb-6 flex items-center">
+                  <span class="text-[#00ff9d] mr-2 neon-text">+</span>
+                  Experiências
+                </h3>
+                <div class="space-y-12">
+                  <div class="experience-item fade-in">
+                    <h3 class="text-xl font-bold mb-2">Freelancer</h3>
+                    <p class="text-[#00ff9d] mb-4">Desenvolvimento web</p>
+                    <p class="text-gray-400 text-justify">
+                      Criação de sites modernos e responsivos, com soluções personalizadas para diferentes nichos de mercado. Utilização das melhores práticas de desenvolvimento, design e usabilidade para oferecer interfaces intuitivas, funcionais e voltadas à melhor experiência do usuário.
+                    </p>
+                    <div class="flex gap-2 mt-4">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        class="w-6 h-6 tech-icon"
+                        alt="JavaScript"
+                      />
+                      <img
+                        src="https://icongr.am/devicon/css3-original.svg?size=128&color=currentColor"
+                        class="w-6 h-6 tech-icon"
+                        alt="Css"
+                      />
+                      <img
+                        src="https://icongr.am/devicon/html5-original.svg?size=128&color=currentColor"
+                        class="w-6 h-6 tech-icon"
+                        alt="HTML"
+                      />
+ 
+                    </div>
+                  </div>
+
+            
+                </div>
+              </div>
+            </div>
+
+            <section id="technology" class="mt-20 mb-20">
+              <h2 class="text-2xl font-bold text-[#00ff9d] mb-2">TECNOLOGIAS</h2>
+              <p class="text-xl mb-10 text-gray-400">Tecnologias nas quais atuo.</p>
+              
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <div class="tech-card p-6 rounded-lg fade-in">
+                      <h4 class="text-lg font-bold mb-4 flex items-center gap-2">
+                          <span class="text-[#00ff9d]">+</span>
+                          Ferramentas
+                      </h4>
+                      <div class="space-y-2">
+                          <div class="flex items-center gap-2">
+                              <div class="w-2 h-2 bg-[#00ff9d] rounded-full"></div>
+                              <span>VS Code</span>
+                          </div>
+                          <div class="flex items-center gap-2">
+                              <div class="w-2 h-2 bg-[#00ff9d] rounded-full"></div>
+                              <span>Git e Git Hub</span>
+                          </div>
+                          <div class="flex items-center gap-2">
+                              <div class="w-2 h-2 bg-[#00ff9d] rounded-full"></div>
+                              <span>Code Pen</span>
+                          </div>
+                          <div class="flex items-center gap-2">
+                              <div class="w-2 h-2 bg-[#00ff9d] rounded-full"></div>
+                              <span>Figma</span>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <div class="tech-card p-6 rounded-lg fade-in">
+                      <h4 class="text-lg font-bold mb-4 flex items-center gap-2">
+                          <span class="text-[#00ff9d]">+</span>
+                          Framework
+                      </h4>
+                      <div class="space-y-2">
+                          <div class="flex items-center gap-2">
+                              <div class="w-2 h-2 bg-[#00ff9d] rounded-full"></div>
+                              <span>Angular e Ionic</span>
+                          </div>
+                          <div class="flex items-center gap-2">
+                              <div class="w-2 h-2 bg-[#00ff9d] rounded-full"></div>
+                            <span>PMBOK e SCRUM</span>
+                          </div>
+                          <div class="flex items-center gap-2">
+                              <div class="w-2 h-2 bg-[#00ff9d] rounded-full"></div>
+                            <span>Ionic</span>
+                          </div>
+                          <div class="flex items-center gap-2">
+                              <div class="w-2 h-2 bg-[#00ff9d] rounded-full"></div>
+                              <span>Laravel</span>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <div class="tech-card p-6 rounded-lg fade-in">
+                      <h4 class="text-lg font-bold mb-4 flex items-center gap-2">
+                          <span class="text-[#00ff9d]">+</span>
+                          Linguagens
+                      </h4>
+                      <div class="space-y-2">
+                          <div class="flex items-center gap-2">
+                              <div class="w-2 h-2 bg-[#00ff9d] rounded-full"></div>
+                              <span>JavaScript</span>
+                          </div>
+                          <div class="flex items-center gap-2">
+                              <div class="w-2 h-2 bg-[#00ff9d] rounded-full"></div>
+                              <span>HTML/CSS</span>
+                          </div>
+                          <div class="flex items-center gap-2">
+                              <div class="w-2 h-2 bg-[#00ff9d] rounded-full"></div>
+                              <span>UI/UX Design</span>
+                          </div>
+                          <div class="flex items-center gap-2">
+                              <div class="w-2 h-2 bg-[#00ff9d] rounded-full"></div>
+                              <span>Python</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+            
+            
+            
+          <!-- Skills Section - Modern Design -->
+<section id="skills" class="skills section bg-gradient-dark">
+    <div class="container">
+        <div class="section-header text-center">
+            <h2 class="text-2xl font-bold text-[#00ff9d] mb-2">COMPETÊNCIAS TÉCNICAS</h2>
+            <div class="section-divider divider-accent"></div>
+            <p class="section-description text-light opacity-75">
+                Tecnologias que domino e utilizo para criar soluções robustas e inovadoras
+            </p>
+        </div>
+        
+        <div class="skills-grid">
+            <!-- Development Category -->
+            <div class="skill-category card-hover">
+                <div class="category-header">
+                    <div class="icon-box bg-accent">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-light">Front-end</h3>
+                </div>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">HTML5</span>
+                            <span class="skill-percent">Avançado</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-level="85" style="--skill-level: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">CSS</span>
+                            <span class="skill-percent">Avançado</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-level="85" style="--skill-level: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-percent">Intermediário</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-level="65" style="--skill-level: 65%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Design UX e UI</span>
+                            <span class="skill-percent">Intermediário</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-level="60" style="--skill-level: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Backend & DevOps Category -->
+            <div class="skill-category card-hover">
+                <div class="category-header">
+                    <div class="icon-box bg-primary">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="text-light">Back-end</h3>
+                </div>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">SQL</span>
+                            <span class="skill-percent">Intermediário</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-level="65" style="--skill-level: 65%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Python</span>
+                            <span class="skill-percent">Intermediário</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-level="75" style="--skill-level: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">TypeScript</span>
+                            <span class="skill-percent">Intermediário</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-level="70" style="--skill-level: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">PHP</span>
+                            <span class="skill-percent">Intermediário</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-level="65" style="--skill-level: 65%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Infrastructure & Security -->
+            <div class="skill-category card-hover">
+                <div class="category-header">
+                    <div class="icon-box bg-secondary">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-light">Framework/Programas</h3>
+                </div>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Excel</span>
+                            <span class="skill-percent">Intermediário</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-level="70" style="--skill-level: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Angular</span>
+                            <span class="skill-percent">Intermediário</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-level="55" style="--skill-level: 55%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Ionic</span>
+                            <span class="skill-percent">Intermediário</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-level="45" style="--skill-level: 45%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Windows/Office</span>
+                            <span class="skill-percent">Avançado</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-level="90" style="--skill-level: 90%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                    <div class="text-center mt-5">
+                        <a href="#portfolio" class="btn btn-outline-accent">
+                            Ver Projetos Relacionados
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                    </div>
+                    </section>
+
+                    <section id="portfolio" class="mb-32">
+                      <div class="container mx-auto">
+                        <h2 class="text-2xl font-bold text-[#00ff9d] mb-2">PORTFÓLIO</h2>
+                        <p class="text-xl mb-8 text-gray-400">Explore meus projetos</p>
+    <!-- Filtros por categoria -->
+    <div class="flex flex-wrap gap-3 mb-12">
+      <button class="portfolio-filter active px-4 py-2 rounded-full bg-[#00ff9d] text-black font-medium transition-all" data-filter="all">Todos</button>
+      <button class="portfolio-filter px-4 py-2 rounded-full bg-[#222222] hover:bg-[#333333] font-medium transition-all" data-filter="web">Web</button>
+      <button class="portfolio-filter px-4 py-2 rounded-full bg-[#222222] hover:bg-[#333333] font-medium transition-all" data-filter="mobile">Mobile</button>
+      <button class="portfolio-filter px-4 py-2 rounded-full bg-[#222222] hover:bg-[#333333] font-medium transition-all" data-filter="games">Jogos</button>
+      <button class="portfolio-filter px-4 py-2 rounded-full bg-[#222222] hover:bg-[#333333] font-medium transition-all" data-filter="design">Design</button>
+    </div>
+    
+    <!-- Grid de projetos -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 portfolio-grid">
+      <!-- Projeto 1 - Web -->
+      <div class="portfolio-item web" data-category="web">
+        <div class="portfolio-card rounded-xl overflow-hidden h-full flex flex-col border border-gray-800 hover:border-[#00ff9d] transition-all duration-300">
+          <div class="relative overflow-hidden">
+            <img
+              src="https://i.postimg.cc/0QQHbP2h/Captura-de-tela-2025-04-13-202114.png"
+              alt="WeCacau"
+              class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 hover:opacity-80 transition-opacity duration-300 flex items-end p-4">
+              <div class="flex gap-2">
+                <span class="tech-badge bg-[#00ff9d]/20 text-[#00ff9d] px-3 py-1 rounded-full text-xs">HTML</span>
+                <span class="tech-badge bg-[#00ff9d]/20 text-[#00ff9d] px-3 py-1 rounded-full text-xs">CSS</span>
+                <span class="tech-badge bg-[#00ff9d]/20 text-[#00ff9d] px-3 py-1 rounded-full text-xs">JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 flex-grow flex flex-col">
+            <div class="flex-grow">
+              <h3 class="text-xl font-bold mb-2">1°portfólio</h3>
+              <p class="text-gray-400 mb-4">Primeiro projeto realizado no 1° semestre da faculdade, com intuito de se ambientar com as linguagens de programação.</p>
+            </div>
+            <div class="flex justify-between items-center">
+              <a href="https://math4ez.github.io/portfolio00/" target="_blank" class="text-sm text-[#00ff9d] hover:underline">Ver projeto</a>
+              <a href="https://github.com/math4ez/portfolio00" target="_blank" class="github-icon w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center hover:opacity-80 transition-opacity">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="w-5 h-5" alt="GitHub"/>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Projeto 2 - Web -->
+      <div class="portfolio-item web" data-category="web">
+        <div class="portfolio-card rounded-xl overflow-hidden h-full flex flex-col border border-gray-800 hover:border-[#00ff9d] transition-all duration-300">
+          <div class="relative overflow-hidden">
+            <img
+              src="https://i.postimg.cc/GtbyrpM0/Captura-de-tela-2025-04-13-222757.png"
+              alt="Blitz Café"
+              class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 hover:opacity-80 transition-opacity duration-300 flex items-end p-4">
+              <div class="flex gap-2">
+                <span class="tech-badge bg-[#00ff9d]/20 text-[#00ff9d] px-3 py-1 rounded-full text-xs">HTML</span>
+                <span class="tech-badge bg-[#00ff9d]/20 text-[#00ff9d] px-3 py-1 rounded-full text-xs">CSS</span>
+                <span class="tech-badge bg-[#00ff9d]/20 text-[#00ff9d] px-3 py-1 rounded-full text-xs">JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 flex-grow flex flex-col">
+            <div class="flex-grow">
+              <h3 class="text-xl font-bold mb-2">Tecnologia para 3°idade</h3>
+              <p class="text-gray-400 mb-4">Plataforma digital para ensino e inclusão da 3°idade no mundo tecnológico.</p>
+            </div>
+            <div class="flex justify-between items-center">
+              <a href="https://math4ez.github.io/Projeto-3-idade/" target="_blank" class="text-sm text-[#00ff9d] hover:underline">Ver projeto</a>
+              <a href="https://github.com/math4ez/Projeto-3-idade" target="_blank" class="github-icon w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center hover:opacity-80 transition-opacity">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="w-5 h-5" alt="GitHub"/>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Projeto 3 - Mobile -->
+      <div class="portfolio-item mobile" data-category="mobile">
+        <div class="portfolio-card rounded-xl overflow-hidden h-full flex flex-col border border-gray-800 hover:border-[#00ff9d] transition-all duration-300">
+          <div class="relative overflow-hidden">
+            <img
+              src="https://i.postimg.cc/fLn6ykry/ifoot.jpg"
+              alt="App Ifoot"
+               class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 hover:opacity-80 transition-opacity duration-300 flex items-end p-4">
+              <div class="flex gap-2">
+                <span class="tech-badge bg-[#00ff9d]/20 text-[#00ff9d] px-3 py-1 rounded-full text-xs">Ionic</span>
+                <span class="tech-badge bg-[#00ff9d]/20 text-[#00ff9d] px-3 py-1 rounded-full text-xs">Firebase</span>
+                <span class="tech-badge bg-[#00ff9d]/20 text-[#00ff9d] px-3 py-1 rounded-full text-xs">Angular</span>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 flex-grow flex flex-col">
+            <div class="flex-grow">
+              <h3 class="text-xl font-bold mb-2">Ifoot</h3>
+              <p class="text-gray-400 mb-4">Aplicativo exclusivamente mobile (android) que consiste em uma plataforma de fast food, apresentando um layout objetivo, simples e conciso a todos, oferecendo serviços rápidos e com deliverys.</p>
+            </div>
+            <div class="flex justify-between items-center">
+               <a href="https://i.postimg.cc/d11X4rMD/ifoot.jpg" target="_blank" class="text-sm text-[#00ff9d] hover:underline">Ver projeto</a>
+              <a href="https://github.com/math4ez/ifoot" target="_blank" class="github-icon w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center hover:opacity-80 transition-opacity">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="w-5 h-5" alt="GitHub"/>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+     <!-- Projeto 4 - Games -->
+<div class="portfolio-item games" data-category="games">
+  <div class="portfolio-card rounded-xl overflow-hidden h-full flex flex-col border border-gray-800 hover:border-[#00ff9d] transition-all duration-300">
+    <div class="relative overflow-hidden">
+      <img
+        src="https://i.postimg.cc/Y9mvxLX7/Captura-de-tela-2025-04-13-201505.png"
+        alt="Jogo VR"
+        class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 hover:opacity-80 transition-opacity duration-300 flex items-end p-4">
+        <div class="flex gap-2">
+          <span class="tech-badge bg-[#00ff9d]/20 text-[#00ff9d] px-3 py-1 rounded-full text-xs">HTML</span>
+          <span class="tech-badge bg-[#00ff9d]/20 text-[#00ff9d] px-3 py-1 rounded-full text-xs">CSS</span>
+          <span class="tech-badge bg-[#00ff9d]/20 text-[#00ff9d] px-3 py-1 rounded-full text-xs">Javacript</span>
+        </div>
+      </div>
+    </div>
+    <div class="p-6 flex-grow flex flex-col">
+      <div class="flex-grow">
+        <h3 class="text-xl font-bold mb-2">Jogo da memória</h3>
+        <p class="text-gray-400 mb-4">Jogo voltado para treino de símbolos usados no JavaScript.</p>
+      </div>
+     <div class="flex justify-between items-center">
+               <a href="https://math4ez.github.io/jogo-memoria/" target="_blank" class="text-sm text-[#00ff9d] hover:underline">Ver Projeto</a>
+              <a href="https://github.com/math4ez/jogo-memoria" target="_blank" class="github-icon w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center hover:opacity-80 transition-opacity">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="w-5 h-5" alt="GitHub"/>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Projeto 5 - Games -->
+<div class="portfolio-item games" data-category="games">
+  <div class="portfolio-card rounded-xl overflow-hidden h-full flex flex-col border border-gray-800 hover:border-[#00ff9d] transition-all duration-300">
+    <div class="relative overflow-hidden">
+      <img
+        src="https://i.postimg.cc/vBhYGnt7/Captura-de-tela-2025-04-13-212412.png"
+        alt="RPG 3D"
+        class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 hover:opacity-80 transition-opacity duration-300 flex items-end p-4">
+        <div class="flex gap-2">
+          <span class="tech-badge bg-[#00ff9d]/20 text-[#00ff9d] px-3 py-1 rounded-full text-xs">HTML</span>
+          <span class="tech-badge bg-[#00ff9d]/20 text-[#00ff9d] px-3 py-1 rounded-full text-xs">CSS</span>
+          <span class="tech-badge bg-[#00ff9d]/20 text-[#00ff9d] px-3 py-1 rounded-full text-xs">JavaScript</span>
+        </div>
+      </div>
+    </div>
+    <div class="p-6 flex-grow flex flex-col">
+      <div class="flex-grow">
+        <h3 class="text-xl font-bold mb-2">Quiz</h3>
+        <p class="text-gray-400 mb-4">Quiz super completo,com muito CSS avançado e um background com partículas.</p>
+      </div>
+      <div class="flex justify-between items-center">
+              <a href="https://codepen.io/Matheus-Brasil-the-sasster/full/mydoLPY" target="_blank" class="text-sm text-[#00ff9d] hover:underline">Ver projeto</a>
+              <a href="https://github.com/math4ez/Quiz" target="_blank" class="github-icon w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center hover:opacity-80 transition-opacity">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="w-5 h-5" alt="GitHub"/>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Projeto 6 - Games -->
+<div class="portfolio-item games" data-category="games">
+  <div class="portfolio-card rounded-xl overflow-hidden h-full flex flex-col border border-gray-800 hover:border-[#00ff9d] transition-all duration-300">
+    <div class="relative overflow-hidden">
+      <img
+        src="https://i.postimg.cc/YSj75xrQ/Captura-de-tela-2025-04-13-215510.png"
+        alt="Jogo Mobile"
+        class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 hover:opacity-80 transition-opacity duration-300 flex items-end p-4">
+        <div class="flex gap-2">
+          <span class="tech-badge bg-[#00ff9d]/20 text-[#00ff9d] px-3 py-1 rounded-full text-xs">HTML</span>
+          <span class="tech-badge bg-[#00ff9d]/20 text-[#00ff9d] px-3 py-1 rounded-full text-xs">CSS</span>
+           <span class="tech-badge bg-[#00ff9d]/20 text-[#00ff9d] px-3 py-1 rounded-full text-xs">JavaScript</span>
+        </div>
+      </div>
+    </div>
+    <div class="p-6 flex-grow flex flex-col">
+      <div class="flex-grow">
+        <h3 class="text-xl font-bold mb-2">Anime Fight</h3>
+        <p class="text-gray-400 mb-4">Jogo de luta 3D com sistema de combate por cartas.</p>
+      </div>
+      <div class="flex justify-between items-center">
+              <a href="https://codepen.io/Matheus-Brasil-the-sasster/full/mydowdX" target="_blank" class="text-sm text-[#00ff9d] hover:underline">Ver projeto</a>
+              <a href="https://github.com/math4ez/anime-fight/tree/main" target="_blank" class="github-icon w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center hover:opacity-80 transition-opacity">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="w-5 h-5" alt="GitHub"/>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Projeto 7 - Games -->
+<div class="portfolio-item games" data-category="games">
+  <div class="portfolio-card rounded-xl overflow-hidden h-full flex flex-col border border-gray-800 hover:border-[#00ff9d] transition-all duration-300">
+    <div class="relative overflow-hidden">
+      <img
+        src="https://i.postimg.cc/HxxrPMKN/Captura-de-tela-2025-04-13-215700.png"
+        alt="Jogo Multiplayer"
+        class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 hover:opacity-80 transition-opacity duration-300 flex items-end p-4">
+        <div class="flex gap-2">
+          <span class="tech-badge bg-[#00ff9d]/20 text-[#00ff9d] px-3 py-1 rounded-full text-xs">HTML</span>
+          <span class="tech-badge bg-[#00ff9d]/20 text-[#00ff9d] px-3 py-1 rounded-full text-xs">CSS</span>
+          <span class="tech-badge bg-[#00ff9d]/20 text-[#00ff9d] px-3 py-1 rounded-full text-xs">JavaScript</span>
+        </div>
+      </div>
+    </div>
+    <div class="p-6 flex-grow flex flex-col">
+      <div class="flex-grow">
+        <h3 class="text-xl font-bold mb-2">Desafio Kakegurui</h3>
+        <p class="text-gray-400 mb-4">Jokenpô estilizado e competitivo contra a CPU.</p>
+      </div>
+        <div class="flex justify-between items-center">
+              <a href="https://codepen.io/Matheus-Brasil-the-sasster/full/wBvRrYO" target="_blank" class="text-sm text-[#00ff9d] hover:underline">Ver projeto</a>
+              <a href="https://github.com/math4ez/desafio-kakegurui" target="_blank" class="github-icon w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center hover:opacity-80 transition-opacity">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="w-5 h-5" alt="GitHub"/>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Projeto 8 - Games -->
+<div class="portfolio-item games" data-category="games">
+  <div class="portfolio-card rounded-xl overflow-hidden h-full flex flex-col border border-gray-800 hover:border-[#00ff9d] transition-all duration-300">
+    <div class="relative overflow-hidden">
+      <img
+        src="https://i.postimg.cc/wx5hy5zX/Captura-de-tela-2025-04-13-220058.png"
+        alt="Simulador"
+        class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 hover:opacity-80 transition-opacity duration-300 flex items-end p-4">
+        <div class="flex gap-2">
+          <span class="tech-badge bg-[#00ff9d]/20 text-[#00ff9d] px-3 py-1 rounded-full text-xs">HTML</span>
+          <span class="tech-badge bg-[#00ff9d]/20 text-[#00ff9d] px-3 py-1 rounded-full text-xs">CSS</span>
+          <span class="tech-badge bg-[#00ff9d]/20 text-[#00ff9d] px-3 py-1 rounded-full text-xs">JavaScript</span>
+        </div>
+      </div>
+    </div>
+    <div class="p-6 flex-grow flex flex-col">
+      <div class="flex-grow">
+        <h3 class="text-xl font-bold mb-2">Portal Mistery</h3>
+        <p class="text-gray-400 mb-4">Simulação de um jogo de portas, onde o objetivo é escapar do alien.</p>
+      </div>
+      <div class="flex justify-between items-center">
+              <a href="https://codepen.io/Matheus-Brasil-the-sasster/full/NPWJggV" target="_blank" class="text-sm text-[#00ff9d] hover:underline">Ver projeto</a>
+              <a href="https://github.com/math4ez/jogo-das-portas" target="_blank" class="github-icon w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center hover:opacity-80 transition-opacity">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="w-5 h-5" alt="GitHub"/>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+      
+      <!-- Projeto 9 - Design -->
+      <div class="portfolio-item design" data-category="design">
+        <div class="portfolio-card rounded-xl overflow-hidden h-full flex flex-col border border-gray-800 hover:border-[#00ff9d] transition-all duration-300">
+          <div class="relative overflow-hidden">
+            <img
+              src="https://i.postimg.cc/VLHHJvJ1/Captura-de-tela-2025-04-14-010152.png"
+              alt="UI/UX Design"
+              class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 hover:opacity-80 transition-opacity duration-300 flex items-end p-4">
+              <div class="flex gap-2">
+                <span class="tech-badge bg-[#00ff9d]/20 text-[#00ff9d] px-3 py-1 rounded-full text-xs">HTML</span>
+                <span class="tech-badge bg-[#00ff9d]/20 text-[#00ff9d] px-3 py-1 rounded-full text-xs">CSS</span>
+                <span class="tech-badge bg-[#00ff9d]/20 text-[#00ff9d] px-3 py-1 rounded-full text-xs">JavaScript</span>
+                <span class="tech-badge bg-[#00ff9d]/20 text-[#00ff9d] px-3 py-1 rounded-full text-xs">UI/UX</span>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 flex-grow flex flex-col">
+            <div class="flex-grow">
+              <h3 class="text-xl font-bold mb-2">Sistema de Moedas</h3>
+              <p class="text-gray-400 mb-4">Design de interface para sistema de conversor de moedas, focado na usuabilidade.</p>
+            </div>
+     <div class="flex justify-between items-center">
+              <a href="https://codepen.io/Matheus-Brasil-the-sasster/full/yyLQQJg" target="_blank" class="text-sm text-[#00ff9d] hover:underline">Ver projeto</a>
+              <a href="https://github.com/math4ez/conversor-de-moedas" target="_blank" class="github-icon w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center hover:opacity-80 transition-opacity">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="w-5 h-5" alt="GitHub"/>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Projeto 10 - Web -->
+      <div class="portfolio-item web" data-category="web">
+        <div class="portfolio-card rounded-xl overflow-hidden h-full flex flex-col border border-gray-800 hover:border-[#00ff9d] transition-all duration-300">
+          <div class="relative overflow-hidden">
+            <img
+              src="https://i.postimg.cc/sXvf005F/Captura-de-tela-2025-04-13-234257.png"
+              alt="Portfolio React"
+              class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 hover:opacity-80 transition-opacity duration-300 flex items-end p-4">
+              <div class="flex gap-2">
+                <span class="tech-badge bg-[#00ff9d]/20 text-[#00ff9d] px-3 py-1 rounded-full text-xs">HTML</span>
+                <span class="tech-badge bg-[#00ff9d]/20 text-[#00ff9d] px-3 py-1 rounded-full text-xs">CSS</span>
+                <span class="tech-badge bg-[#00ff9d]/20 text-[#00ff9d] px-3 py-1 rounded-full text-xs">JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 flex-grow flex flex-col">
+            <div class="flex-grow">
+              <h3 class="text-xl font-bold mb-2">Pomodoro</h3>
+              <p class="text-gray-400 mb-4">Um método de produtividade que ajuda a gerenciar o tempo e manter o foco em tarefas complexas.</p>
+            </div>
+            <div class="flex justify-between items-center">
+              <a href="https://codepen.io/Matheus-Brasil-the-sasster/full/zxYggVo" target="_blank" class="text-sm text-[#00ff9d] hover:underline">Ver projeto</a>
+              <a href="https://github.com/math4ez/Pomodoro" target="_blank" class="github-icon w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center hover:opacity-80 transition-opacity">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="w-5 h-5" alt="GitHub"/>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section id="contact" class="mb-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+          <h2 class="text-2xl md:text-3xl font-bold text-[#00ff9d]">CONTATO</h2>
+          <p class="text-xl mb-8 text-gray-400">Vamos trabalhar juntos?</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="contact-card p-8 rounded-xl fade-in group">
+              <div class="flex items-center gap-6">
+                <div
+                  class="contact-icon w-14 h-14 rounded-full flex items-center justify-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-7 w-7 text-[#00ff9d]"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold mb-2">Email</h3>
+                  <a
+                    href="mailto:matheuslavrabrasil@gmail.com"
+                    class="text-gray-400 hover:text-[#00ff9d] transition-colors"
+                  >
+                    matheuslavrabrasil@gmail.com
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-card p-8 rounded-xl fade-in group">
+              <div class="flex items-center gap-6">
+                <div
+                  class="contact-icon w-14 h-14 rounded-full flex items-center justify-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-7 w-7 text-[#00ff9d]"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold mb-2">Contato</h3>
+                  <p class="text-gray-400">(21)97011-6588</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-card p-8 rounded-xl fade-in group">
+              <div class="flex items-center gap-6">
+                <div
+                  class="contact-icon w-14 h-14 rounded-full flex items-center justify-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-7 w-7 text-[#00ff9d]"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold mb-2">Social</h3>
+                  <div class="flex gap-4 mt-2">
+                    <a
+                      href="https://www.linkedin.com/in/matheus-brasil-8a0528203/"
+                      target="_blank"
+                      class="w-10 h-10 bg-[#181717] rounded-full flex items-center justify-center hover:opacity-80 transition-opacity"
+                    >
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                        class="w-6 h-6 invert"
+                        alt="LinkedIn"
+                      />
+                    </a>
+                      <a
+                        href="https://github.com/math4ez"
+                        target="_blank"
+                        class="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center hover:opacity-80 transition-opacity"
+                      >
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                          class="w-6 h-6 invert"
+                          alt="GitHub"
+                        />
+</a>
+              </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-1 p-8 contact-card rounded-xl fade-in">
+            <h3 class="text-2xl font-bold mb-6">Envie uma mensagem</h3>
+            <form
+              id="contact-form"
+              action="https://formspree.io/f/mblgbpow"
+              method="POST"
+              class="space-y-6"
+            >
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label
+                    for="name"
+                    class="block text-sm font-medium text-gray-400 mb-2"
+                    >Nome</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="w-full px-4 py-3 bg-[#222222] border border-gray-700 rounded-lg focus:outline-none focus:border-[#00ff9d] transition-colors text-white"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    for="email"
+                    class="block text-sm font-medium text-gray-400 mb-2"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="w-full px-4 py-3 bg-[#222222] border border-gray-700 rounded-lg focus:outline-none focus:border-[#00ff9d] transition-colors text-white"
+                    required
+                  />
+                </div>
+              </div>
+              <div>
+                <label
+                  for="subject"
+                  class="block text-sm font-medium text-gray-400 mb-2"
+                  >Assunto</label
+                >
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  class="w-full px-4 py-3 bg-[#222222] border border-gray-700 rounded-lg focus:outline-none focus:border-[#00ff9d] transition-colors text-white"
+                  required
+                />
+              </div>
+              <div>
+                <label
+                  for="message"
+                  class="block text-sm font-medium text-gray-400 mb-2"
+                  >Mensagem</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  class="w-full px-4 py-3 bg-[#222222] border border-gray-700 rounded-lg focus:outline-none focus:border-[#00ff9d] transition-colors text-white resize-none"
+                  required
+                ></textarea>
+              </div>
+              <div>
+                <button
+                  type="submit"
+                  class="w-full md:w-auto px-8 py-3 bg-[#00ff9d] text-black font-semibold rounded-lg hover:bg-opacity-90 transition-all transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#00ff9d] focus:ring-opacity-50"
+                >
+                  Enviar Mensagem
+                </button>
+              </div>
+            </form>
+
+            <div id="thank-you-message" style="display: none">
+              <h4 class="text-2xl font-semibold">
+                Obrigado pela sua mensagem!
+              </h4>
+              <p>Seu formulário foi enviado com sucesso.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="border-t border-gray-800 py-12 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="col-span-1 md:col-span-2">
+              <div class="text-xl font-bold mb-4">
+                <span class="text-white">MATHEUS BRASIL</span>
+                <span class="block text-sm text-gray-400 mt-1"
+                  >Desenvolvedor</span
+                >
+              </div>
+              <p class="text-gray-400 text-sm mb-6">
+                Criando experiências digitais únicas e memoráveis através do
+                desenvolvimento web moderno.
+              </p>
+            </div>
+
+            <div>
+              <h4 class="text-lg font-semibold mb-4">Links Rápidos</h4>
+              <ul class="space-y-2">
+                <li>
+                  <a
+                    href="#home"
+                    class="text-gray-400 hover:text-[#00ff9d] transition-colors footer-link"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#about"
+                    class="text-gray-400 hover:text-[#00ff9d] transition-colors footer-link"
+                    >Sobre</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#portfolio"
+                    class="text-gray-400 hover:text-[#00ff9d] transition-colors footer-link"
+                    >Portfolio</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#contact"
+                    class="text-gray-400 hover:text-[#00ff9d] transition-colors footer-link"
+                    >Contato</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="text-lg font-semibold mb-4">Social</h4>
+              <div class="flex space-x-4">
+                <a
+                  href="https://www.linkedin.com/in/matheus-brasil-8a0528203/"
+                  target="_blank"
+                  id="linkedin"
+                  class="w-10 h-10 bg-[#222222] rounded-full flex items-center justify-center hover:bg-[#00ff9d] transition-all transform hover:scale-110"
+                >
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                    class="w-5 h-5"
+                    alt="LinkedIn"
+                  />
+                </a>
+               <a
+                  href="https://github.com/math4ez"
+                  target="_blank"
+                  id="github"
+                  class="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center hover:bg-[#00ff9d] transition-all transform hover:scale-110"
+                >
+                 <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                          class="w-6 h-6 invert"
+                          alt="GitHub"
+                        />
+                  
+                </a>
+                  
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center"
+          >
+            <p class="text-gray-400 text-sm mb-4 md:mb-0">
+              © 2025 Matheus Brasil. Todos os direitos reservados.
+            </p>
+            <div class="flex items-center space-x-4">
+              <a
+                href="#"
+                class="text-gray-400 hover:text-[#00ff9d] transition-colors text-sm"
+                >Política de Privacidade</a
+              >
+              <span class="text-gray-600">•</span>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-[#00ff9d] transition-colors text-sm"
+                >Termos de Uso</a
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    
+     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="scrip.js"></script>
+    
+
+  </body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
